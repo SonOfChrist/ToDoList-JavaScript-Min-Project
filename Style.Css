@@ -6,6 +6,8 @@
     --light : #eee;
     --pink: #ec4899;
     --purple: #8b5cf6;
+    --blue: #0700cb;
+    --green: #25f853;
 }
 
 * {
@@ -57,7 +59,7 @@ input, button {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, var(--pink), var(--green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -92,6 +94,9 @@ main {
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
+#tasks .task .content {
+    flex: 1 1 0%;
+}
 #tasks .task .content .text {
     color: var(--light);
     font-size: 1.125rem;
@@ -100,7 +105,7 @@ main {
     transition: 0.4s;
 }
 #tasks .task .content .text:not(:read-only) {
-    color: var(--pink);
+    color: var(--green);
 }
 #tasks .task .actions {
     display: flex;
